@@ -1,0 +1,567 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #d3cbf0, #b6ade6,#806afa);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #5532c7 !important;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff87d7 !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Navigation Buttons */
+.navbar-nav {
+  display: flex;
+  gap: 15px;  /* Adjusts spacing between buttons */
+  align-items: center;
+}
+
+.navbar-nav .btn {
+  font-weight: bold;
+  font-size: 16px;
+  color: #3f0de4;
+  background-color:#c7c1da;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 20px;
+}
+
+.navbar-nav .btn:hover {
+  background-color: #ff87d7;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;  /* Stack buttons on small screens */
+    text-align: center;
+    gap: 10px; /* Adjust spacing for small screens */
+    padding-top: 10px;
+  }
+
+  .navbar-nav .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Main Content */
+.container-fluid {
+  padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #5532c7;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: 30px;
+}
+/* ---------------------------------------------------------------------------- */
+/* Footer Style */
+.footer {
+  background-color: #421ef7;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff87d7;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive Footer */
+@media (max-width: 576px) {
+  .social-icons {
+    gap: 15px; /* Reduce gap for small screens */
+    font-size: 20px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+  }
+}
+/* -------------------------------------------------------------------------------- */
+/* Display Area Styling */
+.display-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #d3cbf0, #b6ade6);
+  color: rgb(87, 42, 250);
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Picture */
+.pic-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #f505a5;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+/* Introduction Text */
+.intro-div {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro-div p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Highlight Important Words */
+.highlight {
+  color: #f50aa7;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .display-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .intro-div {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
+/* -------------------------------------------------------------------------------------------- */
+/* Skill Section Container */
+.skill-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #d3cbf0, #b6ade6);
+  color: rgb(55, 12, 247);
+  border-radius: 10px;
+}
+
+/* Skill Section Title */
+.skill-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout for Skills */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Skill Cards */
+.skill-card {
+  width: 160px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  background: rgb(209, 186, 247);
+  color: #333;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Skill Images */
+.skill-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skill-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .skill-card {
+    width: 120px;
+  }
+
+  .skill-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-card {
+    width: 100px;
+  }
+
+  .skill-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+/* style for experience */
+
+.experience-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #d3cbf0, #b6ade6);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.experience-title, .experience-section-title {
+  text-align: center;
+  color: #1543e8;
+  margin-bottom: 20px;
+}
+
+.technical-skills-title {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Job Cards */
+.job-card {
+  background: rgb(156, 150, 240);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Titles */
+.job-title {
+  font-size: 18px;
+  font-weight: bold;
+  background: #05cdf5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.company-name {
+  background: #8aaff2;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Responsibilities List */
+.responsibilities {
+  padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-card {
+    padding: 15px;
+  }
+
+  .job-title, .company-name {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+}
+/* --------------------------------------------------------- */
+/* style for contact */
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgb(156, 150, 240);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.contact-title {
+  color: #1543e8;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+/* Icons */
+.contact-icon {
+  font-size: 24px;
+  color: #1543e8;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.2);
+}
+
+/* Icon Colors */
+.email-icon {
+  color: #e74c3c;
+}
+
+.phone-icon {
+  color: #2ecc71;
+}
+
+.github-icon {
+  color: #333;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+}
+.resume-icon{
+  color: rgb(90, 20, 20);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+/* project1 style */
+.background-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: rgb(156, 150, 240);
+}
+
+/* Project Layout */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  background: rgb(156, 150, 240);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  border-bottom: 6px solid blueviolet;
+}
+
+/* Project Content */
+.projcontent-div {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+/* Technologies Used */
+.tech-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-buttons button {
+  background: #1543e8;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.tech-buttons button:hover {
+  background: #0f2e9b;
+}
+
+/* Links */
+.links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1543e8;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Project Image */
+.projimage-div {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projimage-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projcontent-div {
+    text-align: center;
+  }
+
+  .tech-buttons {
+    justify-content: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+}
