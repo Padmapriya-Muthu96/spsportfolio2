@@ -12,10 +12,10 @@ function ContactInfo() {
         <a href="mailto:mpadmapriya96@gmail.com">mpadmapriya96@gmail.com</a>
       </div>
 
-      <div className="contact-item">
+      {/* <div className="contact-item">
         <FaPhoneAlt className="contact-icon phone-icon" />
         <span>+91 9952473429</span>
-      </div>
+      </div> */}
 
       <div className="contact-item">
         <FaGithub className="contact-icon github-icon" />

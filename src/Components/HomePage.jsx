@@ -30,6 +30,7 @@ function HomePage() {
               <Button variant="light" onClick={() => setActiveSection("skill")}>Skills</Button>
               <Button variant="light" onClick={() => setActiveSection("project")}>Projects</Button>
               <Button variant="light" onClick={() => setActiveSection("experiance")}>Experience</Button>
+              <Button variant="light" onClick={() => setActiveSection("resume")}>Resume</Button>
               <Button variant="light" onClick={() => setActiveSection("contact")}>Contact</Button>
             </Nav>
           </Navbar.Collapse>
@@ -42,6 +43,7 @@ function HomePage() {
         {activeSection === "skill" && <Skill />}
         {activeSection === "experiance" && <Experiance />}
         {activeSection === "contact" && <ContactInfo />}
+        {activeSection === "resume" && (<iframe src="https://drive.google.com/file/d/1OAi3a8VYx0BAcLx5OWapVG1qgJki8uHf/preview" style={{width:'100%',height:'500px'}} />)}
         {activeSection === "project" && <Projects />}
         
         
