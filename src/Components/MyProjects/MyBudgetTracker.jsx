@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import MyBudgetApp from '../imageFolder/MyBudgetApp.png';
+import MyBudgetApp from '../imageFolder/myBudgetApp.png';
 
 
 function MyBudgetTrackerApp() {
