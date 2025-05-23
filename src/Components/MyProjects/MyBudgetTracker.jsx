@@ -1,13 +1,13 @@
 
 import { motion } from "framer-motion";
-import shivasKitchen from "../imageFolder/shivasKitchen.png"
+import MyBudgetApp from '../imageFolder/MyBudgetApp.png';
 
 
-function ShivasKitchenApp() {
+function MyBudgetTrackerApp() {
   const usedTech = [
     "React.js",
     "Bootstrap",
-    "Stripe",
+    "Chart.js",
     "Axios",
     "CSS",
     "React-Router-Dom",
@@ -16,6 +16,7 @@ function ShivasKitchenApp() {
     "CORS",
     "Mongoose",
     "Node.js",
+    "Font Awesome",
   ];
 
   return (
@@ -33,7 +34,7 @@ function ShivasKitchenApp() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={shivasKitchen} alt="Shiva's Kitchen" />
+          <img src={MyBudgetApp} alt="My Budget Tracker" />
         </motion.div>
         {/* Project Content */}
         <motion.div
@@ -42,9 +43,9 @@ function ShivasKitchenApp() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <h2>Shiva's Kitchen</h2>
+          <h2>My Budget Tracker</h2>
           <p>
-            Shiva’s Kitchen is a full-stack food ordering web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The app allows users to browse a dynamic menu of available food items, view a delivery availability map, and place orders effortlessly. Users can add items to a cart, adjust quantities, and proceed to checkout by entering their delivery address. The application supports both Cash on Delivery and secure online payment options via Stripe. The frontend is built with React and styled using Bootstrap for a responsive user experience, while the backend handles order management and API communication using Express and MongoDB. Shiva’s Kitchen provides a real-world simulation of an online food delivery system with an intuitive and user-friendly interface.
+            My Budget Tracker App is a simple and efficient tool designed to help users track and manage their income and expenses effortlessly. Users can add income and monitor their total earnings, categorize expenses to track spending by category and amount, and instantly see if their expenses exceed the set budget. The app also provides a monthly expense report, offering a clear and organized overview of financial activity.
           </p>
 
           <p><strong>Technologies Used:</strong></p>
@@ -62,7 +63,7 @@ function ShivasKitchenApp() {
 
           <div className="links">
             <motion.a
-              href="https://github.com/Padmapriya-Muthu96/shivasBiryani-frontend"
+              href="https://github.com/Padmapriya-Muthu96/myBudgetApp-frontend"
               target="_blank"
               whileHover={{ scale: 1.1, color: "#007bff" }}
               transition={{ duration: 0.2 }}
@@ -70,7 +71,7 @@ function ShivasKitchenApp() {
               🔗 Frontend Source Code
             </motion.a>
             <motion.a
-              href="https://github.com/Padmapriya-Muthu96/ShivasBiryaniBackend"
+              href="https://github.com/Padmapriya-Muthu96/myBudgetApp-backend"
               target="_blank"
               whileHover={{ scale: 1.1, color: "#007bff" }}
               transition={{ duration: 0.2 }}
@@ -78,7 +79,7 @@ function ShivasKitchenApp() {
               🔗 Backend Source Code
             </motion.a>
             <motion.a
-              href="https://shivaskitchen.netlify.app/"
+              href="https://mybudgettrack.netlify.app/"
               target="_blank"
               whileHover={{ scale: 1.1, color: "#28a745" }}
               transition={{ duration: 0.2 }}
@@ -94,4 +95,4 @@ function ShivasKitchenApp() {
   );
 }
 
-export default ShivasKitchenApp;
+export default MyBudgetTrackerApp;

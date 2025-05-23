@@ -6,16 +6,22 @@ import BlogApp from "./MyProjects/BlogApp";
 import StudentTeacherManagement from "./MyProjects/Student-Teacher-Management";
 import GoldRateCalculatorApp from "./MyProjects/GoldRateCalculatorApp";
 import ShivasKitchenApp from "./MyProjects/ShivasKitchen";
+import MyBudgetTrackerApp from "./MyProjects/MyBudgetTracker";
+import StackOverFlowCloneApp from "./MyProjects/StackOverFlowClone";
+
+
 
 function Projects() {
   return (
     <div>
-   <GoldRateCalculatorApp/>
-   <ShivasKitchenApp/>
-   <StudentTeacherManagement/>
-   <BlogApp/>
-   <Project1/>
-   <Project2/>
+      <MyBudgetTrackerApp/>
+      <GoldRateCalculatorApp/>
+      <ShivasKitchenApp/>
+      <StackOverFlowCloneApp/>
+      <StudentTeacherManagement/>
+      <BlogApp/>
+      {/* <Project1/>
+      <Project2/> */}
    
    
    

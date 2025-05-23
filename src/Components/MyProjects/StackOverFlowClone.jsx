@@ -1,13 +1,13 @@
 
 import { motion } from "framer-motion";
-import shivasKitchen from "../imageFolder/shivasKitchen.png"
+import StackOverFlowClone from '../imageFolder/StackOverFlowClone.png';
 
 
-function ShivasKitchenApp() {
+function StackOverFlowCloneApp() {
   const usedTech = [
     "React.js",
     "Bootstrap",
-    "Stripe",
+    "react-toastify",
     "Axios",
     "CSS",
     "React-Router-Dom",
@@ -16,6 +16,7 @@ function ShivasKitchenApp() {
     "CORS",
     "Mongoose",
     "Node.js",
+    "Font Awesome",
   ];
 
   return (
@@ -26,15 +27,7 @@ function ShivasKitchenApp() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-       {/* Project Image */}
-         <motion.div
-          className="projimage-div"
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-        >
-          <img src={shivasKitchen} alt="Shiva's Kitchen" />
-        </motion.div>
+       
         {/* Project Content */}
         <motion.div
           className="projcontent-div"
@@ -42,9 +35,9 @@ function ShivasKitchenApp() {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <h2>Shiva's Kitchen</h2>
+          <h2>Stack Overflow Clone</h2>
           <p>
-            Shiva’s Kitchen is a full-stack food ordering web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The app allows users to browse a dynamic menu of available food items, view a delivery availability map, and place orders effortlessly. Users can add items to a cart, adjust quantities, and proceed to checkout by entering their delivery address. The application supports both Cash on Delivery and secure online payment options via Stripe. The frontend is built with React and styled using Bootstrap for a responsive user experience, while the backend handles order management and API communication using Express and MongoDB. Shiva’s Kitchen provides a real-world simulation of an online food delivery system with an intuitive and user-friendly interface.
+            A dynamic platform where users can ask questions, share answers, comment on responses, and upvote helpful solutions—fostering collaborative problem-solving and knowledge sharing.
           </p>
 
           <p><strong>Technologies Used:</strong></p>
@@ -62,7 +55,7 @@ function ShivasKitchenApp() {
 
           <div className="links">
             <motion.a
-              href="https://github.com/Padmapriya-Muthu96/shivasBiryani-frontend"
+              href="https://github.com/Padmapriya-Muthu96/StackOverflow-FE"
               target="_blank"
               whileHover={{ scale: 1.1, color: "#007bff" }}
               transition={{ duration: 0.2 }}
@@ -70,7 +63,7 @@ function ShivasKitchenApp() {
               🔗 Frontend Source Code
             </motion.a>
             <motion.a
-              href="https://github.com/Padmapriya-Muthu96/ShivasBiryaniBackend"
+              href="https://github.com/Padmapriya-Muthu96/StackOverflow-BE"
               target="_blank"
               whileHover={{ scale: 1.1, color: "#007bff" }}
               transition={{ duration: 0.2 }}
@@ -78,7 +71,7 @@ function ShivasKitchenApp() {
               🔗 Backend Source Code
             </motion.a>
             <motion.a
-              href="https://shivaskitchen.netlify.app/"
+              href="https://luxury-mandazi-4856fe.netlify.app/stack/questions"
               target="_blank"
               whileHover={{ scale: 1.1, color: "#28a745" }}
               transition={{ duration: 0.2 }}
@@ -87,11 +80,19 @@ function ShivasKitchenApp() {
             </motion.a>
           </div>
         </motion.div>
-         
+         {/* Project Image */}
+         <motion.div
+          className="projimage-div"
+          initial={{ x: 50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img src={StackOverFlowClone} alt="Stack Overflow Clone" />
+        </motion.div>
 
       </motion.div>
     </div>
   );
 }
 
-export default ShivasKitchenApp;
+export default StackOverFlowCloneApp;
