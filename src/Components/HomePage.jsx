@@ -43,7 +43,7 @@ function HomePage() {
         {activeSection === "skill" && <Skill />}
         {activeSection === "experiance" && <Experiance />}
         {activeSection === "contact" && <ContactInfo />}
-        {activeSection === "resume" && (<iframe src="https://drive.google.com/file/d/1JJk--Lyc609-YO1g6XJfDPtKKVs7SWHp/preview" style={{width:'100%',height:'500px'}} />)}
+        {activeSection === "resume" && (<iframe src="https://drive.google.com/file/d/1kDUky9_b81C7E6LlM3P93vjA-78kkIA0/preview" style={{width:'100%',height:'500px'}} />)}
         {activeSection === "project" && <Projects />}
         
         
