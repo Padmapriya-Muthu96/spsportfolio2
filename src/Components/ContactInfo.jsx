@@ -33,7 +33,7 @@ function ContactInfo() {
       
       <div className="contact-item">
         <FaFilePdf className="contact-icon resume-icon" />
-        <a href="https://drive.google.com/file/d/1OAi3a8VYx0BAcLx5OWapVG1qgJki8uHf/view" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1kDUky9_b81C7E6LlM3P93vjA-78kkIA0/view" target="_blank" rel="noopener noreferrer">
           View Resume
         </a>
       </div>
